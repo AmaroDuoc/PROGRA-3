@@ -1,0 +1,99 @@
+{% extends "core/layout.html" %} {% block content%} {%load static%}
+<main>
+  <div class="LetraBlanco">
+    <h1 style="text-align: center" class="LetraBlanco">
+      Completa el formulario para Contactarnos
+    </h1>
+  </div>
+  <div class="contC">
+    <h5 style="text-align: center" class="Top">Ingrese los datos</h5>
+    <div class="co2">
+      <div class="form-group">
+        <br />
+        <br />
+        <div class="col-10">
+          <input
+            type="text"
+            placeholder="Nombres"
+            class="form-control"
+            id="txtNombresC"
+            required
+          />
+        </div>
+        <br />
+        <div class="col-10">
+          <input
+            type="text"
+            placeholder="Apellido/s"
+            class="form-control"
+            id="txtApellidosC"
+            required
+          />
+        </div>
+        <br />
+        <div class="col-10">
+          <input
+            type="email"
+            placeholder="Gmail"
+            class="form-control"
+            id="txtCorreoC"
+            required
+          />
+        </div>
+        <br />
+        <div class="col-10">
+          <select class="form-select" id="ComunaC">
+            <optgroup label="Region Metropolitana">
+              <option value="0">Seleccione una comuna</option>
+              <option value="1">Recoleta</option>
+              <option value="1">Huechuraba</option>
+              <option value="1">Quilicura</option>
+              <option value="1">Colina</option>
+              <option value="1">Conchali</option>
+              <option value="1">Independencia</option>
+              <option value="1">Santiago</option>
+              <option value="1">Providencia</option>
+              <option value="1">Ñuñoa</option>
+              <option value="1">Puente Alto</option>
+              <option value="1">Quinta Normal</option>
+            </optgroup>
+          </select>
+        </div>
+        <label>Seleccione motivo de contacto</label>
+        <br />
+        <br />
+        <label class="form-check-label">Cotizar</label>
+        <input
+          type="radio"
+          class="form-check-input"
+          name="radiomovilizacion"
+          id="rbtDudas"
+        />
+        <label class="form-check-label">Consulta/Dudas</label>
+        <input
+          type="radio"
+          class="form-check-input"
+          name="radiomovilizacion"
+          id="rbtConsulta"
+        /><br />
+        <br />
+        <div class="col-10">
+          <label>Comentarios</label>
+          <textarea rows="5" class="form-control" id="comentarioC"></textarea>
+        </div>
+      </div>
+      <br />
+      <div class="form-group">
+        <div class="center2">
+          <input
+            type="submit"
+            class="btn btn-primary"
+            id="btnenviarC"
+            value="Enviar"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

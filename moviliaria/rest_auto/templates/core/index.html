@@ -1,0 +1,101 @@
+{% extends "core/layout.html" %} {% block content%} {%load static%}
+<main>
+  <br />
+  <h1 style="text-align: center" class="LetraBlanco">
+    Revisa nuestra variedad de vehiculos
+  </h1>
+  <br />
+  <div class="LetraBlanco">
+    <div class="ld">
+      <h5 id="temperatura-valor"></h5>
+      <h5>...</h5>
+      <h5 id="temperatura-descripcion"></h5>
+      <h5>...</h5>
+      <h5 id="ubicacion"></h5>
+      <h5>...</h5>
+      <h5>Veloc. del Viento:</h5>
+      <h5 id="viento-velocidad"></h5>
+    </div>
+  </div>
+  <br />
+  <div class="container3">
+    <div class="blok1I">
+      <div class="colorI">
+        <div class="container">
+          <div class="row">
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="{% url 'catalogo' %}">
+                    <img
+                      src="{% static 'img/hyundai1.jpg' %}"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="{% url 'catalogo' %}">
+                    <img
+                      src="{% static 'img/Yahama2.jpg' %}"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="{% url 'catalogo' %}">
+                    <img
+                      src="{% static 'img/hyundai2.jpg' %}"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="{% url 'catalogo' %}">
+                    <img
+                      src="{% static 'img/Yahama1 (1).jpg' %}"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </a>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

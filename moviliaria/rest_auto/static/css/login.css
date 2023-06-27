@@ -1,0 +1,93 @@
+
+body{
+    background-image: url('../img/FondoLogin.jpg');   
+
+}
+.container1{
+    height: 645px;
+    width: 600px;
+    margin-left: 660px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+.co2{
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.center{
+    margin-left: 160px;
+    margin-top: 20px;
+}
+
+.blok1{
+    border: 1px solid green;
+    height: 645px;
+    width: 550px;
+    margin-top: 30px;
+    margin-left: 21px;
+    border-radius: 10px;
+}
+.fotologin{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin-left: 130px;
+    border-radius: 10px;
+
+}
+
+
+.container2{
+    border: 1px solid black;
+    height: 520px;
+    width: 500px;
+    margin-left: 704px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.cont2{
+    border: 1px solid black;
+    height: 470px;
+    width: 450px;
+    margin-top: 23px;
+    margin-left: 23px;
+    border-radius: 10px;
+}
+
+.center2{
+    margin-left: 100px;
+}
+
+
+.colorI{
+    width: 1000px;
+    height: 600px;
+    margin-left: 70px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.blok1I{
+    border: 1px solid rgb(0, 0, 0);
+    width: 1150px;
+    height: 660px;
+    margin-left: 350px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+}
+
+.fondologin{
+    
+    background-size: 100%;
+    src: ("../img/FondoLogin.jpg");
+}
+
+.LetraBlanco{
+    color: white;
+}

@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Lista autos</title>
+</head>
+<body>
+            <h1>Editar Datos de las motos</h1>
+            <br>
+
+
+            <button type="button">
+                <a href="{% url 'agregar_motos' %}"> Agregar </a>
+            </button>
+
+            <div id="idMensajes">
+                {% if mensaje %}
+                    {{mensaje}}
+                {% endif %}
+            </div>
+
+
+            <table>
+                {% if motos %}
+                    <th>Patente</th>
+                    <th>tipo_vehiculo</th>
+                    <th>marca</th>
+                    <th>estado</th>
+                    <th>modelo</th>
+                    <th>color</th>
+                    <th>año</th>
+                    <th>foto</th>
+                    <th>comentario</th>
+                    {% for x in motos %}
+                        <tr>
+                            <td> {{x.PatenteMoto}}
+                            <td> {{x.tipo_vehiculo}}
+                            <td> {{x.idmarca}}
+                            <td> {{x.estado}}
+                            <td> {{x.modelo}}
+                            <td> {{x.color}}
+                            <td> {{x.anno}}
+                            <td> {{x.file}}
+                            <td> {{x.comentario}}
+                            <td> <a href="{% url 'borrar_moto' pk=x.PatenteMoto %}">Eliminar</a>
+                            <td> <a href="{% url 'modificar_moto' pk=x.PatenteMoto %}">Modificar</a>
+
+                        </tr>
+                    {% endfor %}
+                {% endif %}
+            </table>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("idMensajes").delay(2000).fadeOut("slow");
+            });
+        </script>
+</body>
+</html>

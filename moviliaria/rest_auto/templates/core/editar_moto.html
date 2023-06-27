@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Lista autos</title>
+</head>
+
+    <div style="text-align: center;">
+        {% if moto %}
+            <h2>Formulario actualizar Datos</h2><br>
+
+            <form action ="{% url 'motos_update' %}" method="POST">
+                {% csrf_token %}
+
+                <pre>Patente:        <input type="text" name="patente"    value="{{moto.patente}}"    ></pre>
+                <pre>Marca           <input type="text" name="marca"      value="{{moto.marca}}"      ></pre>
+                <pre>Estado:         <input type="text" name="estado"     value="{{moto.estado}}"     ></pre>
+                <pre>Modelo:         <input type="text" name="modelo"     value="{{moto.modelo}}"     ></pre>
+                <pre>color:          <input type="text" name="color"      value="{{moto.color}}"      ></pre>
+                <pre>Año:            <input type="text" name="anno"       value="{{moto.anno}}"       ></pre>
+                <pre>Foto            <input type="file" name="file"       value="{{moto.file}}"       ></pre>
+                <pre>Comentario      <input type="text" name="comentario" value="{{moto.comentario}}" ></pre>
+                <pre>Tipo_vehiculo   <select name="tipovehiculo">
+                {% for tipo in tpmoto $}
+
+                    {% if tipo.nombre_vehiculo == moto.idtipo.tipo %}
+                        <option value="{{tipo.idtipo}}" selected>{{tipo.nombre_vehiculo}}</option>
+                    {% else %}
+                        <option value="{{tipo.idtipo}}">{{tipo.nombre_vehiculo}}</option>
+                    {% endif %}
+                {% endfor %}
+                </select></pre>
+            </form><br><br>
+        {% endif %}
+        <div id="idMensajes">
+            {% if mensaje %}
+            {{mensaje}}
+            {% endif %}
+        </div>
+        <br><br>
+        <a href="{% url 'crud_motos' %}">Volver</a>
+    </div>

@@ -1,0 +1,70 @@
+{% extends "core/layout.html" %} {% block content%} {%load static%}
+<main>
+  <br />
+  <br />
+  <h1 style="text-align: center" class="LetraBlanco">
+    Seleccione una Moto para agregarlo al carrito
+  </h1>
+  <br />
+  <br />
+  <div class="blokcards">
+    <div class="cards1">
+      <img
+        src="{% static 'img/Yahama1 (1).jpg' %}"
+        class="d-block w-100"
+        alt="..."
+      />
+    </div>
+    <br />
+    <div class="LetraBlanco">
+      <h1>MT-10</h1>
+      <ul>
+        <li>Marca: YAMAHA</li>
+        <li>Kilometros usados: 40 km</li>
+        <li>Año: 2020</li>
+        <li>Ultima revision: 25/08/2021</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="blokcards">
+    <div class="cards1">
+      <img
+        src="{% static 'img/Yahama2.jpg' %}"
+        class="d-block w-100"
+        alt="..."
+      />
+    </div>
+    <br />
+    <div class="LetraBlanco">
+      <h1>MT-03</h1>
+      <ul>
+        <li>Marca: YAMAHA</li>
+        <li>Kilometros usados: 40 km</li>
+        <li>Año: 2020</li>
+        <li>Ultima revision: 25/08/2021</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="blokcards">
+    <div class="cards1">
+      <img
+        src="{% static 'img/yahamablack.jpg' %}"
+        class="d-block w-100"
+        alt="..."
+      />
+    </div>
+    <br />
+    <div class="LetraBlanco">
+      <h1>FZN150</h1>
+      <ul>
+        <li>Marca: YAMAHA</li>
+        <li>Kilometros usados: 40 km</li>
+        <li>Año: 2020</li>
+        <li>Ultima revision: 25/08/2021</li>
+      </ul>
+    </div>
+  </div>
+</main>
+{% endblock %}

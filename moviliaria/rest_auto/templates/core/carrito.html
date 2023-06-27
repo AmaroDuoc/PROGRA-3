@@ -1,0 +1,84 @@
+{% extends "core/layout.html" %} {% block content%} {%load static%}
+    <main>
+        <h1 style="text-align:center" class="LetraBlanco">Carrito de Compras</h1>
+        <div class="container1">
+            <div class="blok1">
+                <div class="co2">
+                    <div class="form-group">
+                    </div>
+                    <br>
+                    <h6 style="font-family:Arial, Helvetica, sans-serif" class="">Precio del Vehiculo</h6>
+                    <br>
+                    <div class="col-12">
+                        <h6 style="font-family:Arial, Helvetica, sans-serif" class="">Desea Agregar El Seguro</h6>
+                        <label class="form-check-label">Si</label>
+                        <input type="radio" class="form-check-input" name="flexRadioDefault" id="rbtnSI" />
+                        <label class="form-check-label">NO</label>
+                        <input type="radio" class="form-check-input" name="flexRadioDefault" id="rbtnNO" /><br>
+                    </div>
+                    <br>
+                    <div class="col-10">
+                    <label>Tipo Vehiculo</label>
+                    <select class="form-select" id="cbxComuna">
+                        <option value="0" selected>---Seleccione el Vehiculo que desea comprar</option>
+                        <optgroup label="Autos">
+                            <option value="1">Hyundai All New Tucson</option>
+                            <option value="1">All-new Grand i10 Sedan</option>
+                            <option value="1">NEW ALL ACCENT</option>
+                        </optgroup>
+                        <optgroup label="Motos">
+                            <option value="1">MT-10</option>
+                            <option value="1">MT-10</option>
+                            <option value="1">FZN150</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <div class="col-10">
+                        <input type="number" placeholder="Total" class="form-control" id="numTotalA" required />
+                    </div>
+                    <br>
+                    <div class="col-10">
+                        <label>Comuna</label>
+                        <select class="form-select" id="cbxComuna">
+                            <option value="0" selected>---Debe Seleccionar una Comuna</option>
+                            <optgroup label="Region Metropolitana">
+                                <option value="1">Santiago</option>
+                                <option value="1">Maipú</option>
+                                <option value="1">Providencia</option>
+                                <option value="1">Pudahuel</option>
+                                <option value="1">San Bernardo</option>
+                                <option value="1">Ñuñoa</option>
+                                <option value="1">Cerrillos</option>
+                                <option value="1">Las Condes</option>
+                                <option value="1">Recoleta</option>
+                                <option value="1">Lo Prado</option>
+                                <option value="1">Quilicura</option>
+                                <option value="1">Independencia</option>
+                                <option value="1">La Cisterna</option>
+                                <option value="1">Estación Central</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="col-10">
+                        <input type="text" placeholder="Direccion" class="form-control" id="txtDireccionA" required />
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-10">
+                            <input type="number" placeholder="Rut" class="form-control" id="numRutA" required />
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <div class="form-group">
+                        <div class="center">
+                            <input type="submit" class="btn btn-primary" id="btnenviarA" value="Enviar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    {% endblock %}

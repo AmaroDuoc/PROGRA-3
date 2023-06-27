@@ -1,0 +1,49 @@
+{% extends "core/layout.html" %} {% block content%} {%load static%}
+<main>
+  <br />
+  <br />
+  <h1 style="text-align: center" class="LetraBlanco">
+    Revisa nuestra variedad de vehiculos
+  </h1>
+  <br />
+  <br />
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <a href="{% url 'autos' %}">
+            <img
+              src="{% static 'img/hyundai1.jpg' %}"
+              class="card-img-top"
+              alt="..."
+              width="500px"
+              height="500px"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Autos</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="{% url 'motos' %}">
+            <img
+              src="{% static 'img/Yahama1 (1).jpg' %}"
+              class="card-img-top"
+              alt="..."
+              width="500px"
+              height="500px"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Motos</h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

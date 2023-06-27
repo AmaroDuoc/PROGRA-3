@@ -1,0 +1,70 @@
+{% extends "core/layout.html" %} {% block content%} {%load static%}
+<main>
+  <br />
+  <br />
+  <h1 style="text-align: center" class="LetraBlanco">
+    Seleccione un auto para agregarlo al carrito
+  </h1>
+  <br />
+  <br />
+  <div class="blokcards">
+    <div class="cards1">
+      <img
+        src="{% static 'img/hyundai1.jpg' %}"
+        class="d-block w-100"
+        alt="..."
+      />
+    </div>
+    <br />
+    <div class="LetraBlanco">
+      <h1>Hyundai All New Tucson</h1>
+      <ul>
+        <li>Marca: Hyundai</li>
+        <li>Kilometros usados: 90 km</li>
+        <li>Año: 2016</li>
+        <li>Ultima revision: 24/06/2020</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="blokcards">
+    <div class="cards1">
+      <img
+        src="{% static 'img/hyundai2.jpg' %}"
+        class="d-block w-100"
+        alt="..."
+      />
+    </div>
+    <br />
+    <div class="LetraBlanco">
+      <h1>All-new Grand i10 Sedan</h1>
+      <ul>
+        <li>Marca: Hyundai</li>
+        <li>Kilometros usados: 0 km</li>
+        <li>Año: 2020</li>
+        <li>Ultima revision: -</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="blokcards">
+    <div class="cards1">
+      <img
+        src="{% static 'img/sonata.jpg' %}"
+        class="d-block w-100"
+        alt="..."
+      />
+    </div>
+    <br />
+    <div class="LetraBlanco">
+      <h1>NEW ALL ACCENT</h1>
+      <ul>
+        <li>Marca: Hyundai</li>
+        <li>Kilometros usados: 20 km</li>
+        <li>Año: 2022</li>
+        <li>Ultima revision: -</li>
+      </ul>
+    </div>
+  </div>
+</main>
+{% endblock %}
